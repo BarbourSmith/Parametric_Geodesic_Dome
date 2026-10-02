@@ -1,13 +1,529 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-404",
-    "name": "Parametric_Geodesic_Dome",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-404",
+  "name": "Parametric_Geodesic_Dome",
+  "ioValues": [
+    {
+      "name": "Dome Diameter",
+      "ioValue": 6000
+    },
+    {
+      "name": "Frequency",
+      "ioValue": 3
+    },
+    {
+      "name": "Strut Diameter",
+      "ioValue": 40
+    },
+    {
+      "name": "Hub Diameter",
+      "ioValue": 150
+    },
+    {
+      "name": "Hub Thickness",
+      "ioValue": 30
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 1,
+      "y": 0.5,
+      "uniqueID": "id-405",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.2,
+      "uniqueID": "id-416",
+      "name": "Dome Diameter",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.2,
+      "uniqueID": "id-419",
+      "name": "Frequency",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.3,
+      "uniqueID": "id-422",
+      "name": "Strut Diameter",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.4,
+      "uniqueID": "id-425",
+      "name": "Hub Diameter",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.5,
+      "uniqueID": "id-428",
+      "name": "Hub Thickness",
+      "type": "number",
+      "options": []
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.4,
+      "y": 0.7,
+      "uniqueID": "id-431",
+      "name": "Hub",
+      "ioValues": [
+        {
+          "name": "Hub Diameter",
+          "ioValue": 150
+        },
+        {
+          "name": "Hub Thickness",
+          "ioValue": 30
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-433",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-443",
+          "name": "Hub Diameter",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-446",
+          "name": "Hub Thickness",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.2,
+          "y": 0.3,
+          "uniqueID": "id-449",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 150
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4,
+          "y": 0.4,
+          "uniqueID": "id-452",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 30
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5,
+          "y": 0.4,
+          "uniqueID": "id-456",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": -15,
+              "currentEquation": "-Hub Thickness/2"
+            }
+          ]
+        },
+        {
+          "atomType": "Color",
+          "x": 0.7,
+          "y": 0.4,
+          "uniqueID": "id-462",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "selectedColor": "Grey"
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.8,
+          "y": 0.4,
+          "uniqueID": "id-465",
+          "name": "Hub",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Hub"
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.4,
+          "y": 0.7,
+          "uniqueID": "id-468",
+          "name": "-x/2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 30
+            }
+          ],
+          "currentEquation": "-x/2"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-443",
+          "ap2ID": "id-449"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-446",
+          "ap2ID": "id-452"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-446",
+          "ap2ID": "id-468"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-449",
+          "ap2ID": "id-452"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-452",
+          "ap2ID": "id-456"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-456",
+          "ap2ID": "id-462"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-462",
+          "ap2ID": "id-465"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-465",
+          "ap2ID": "id-433"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-468",
+          "ap2ID": "id-456"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.4,
+      "y": 0.5,
+      "uniqueID": "id-435",
+      "name": "Strut",
+      "ioValues": [
+        {
+          "name": "Strut Diameter",
+          "ioValue": 40
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-437",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-472",
+          "name": "Strut Diameter",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.4,
+          "y": 0.5,
+          "uniqueID": "id-475",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 40
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-472",
+          "ap2ID": "id-475"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-475",
+          "ap2ID": "id-437"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.7,
+      "y": 0.4,
+      "uniqueID": "id-439",
+      "name": "Dome Frame",
+      "ioValues": [
+        {
+          "name": "Hub",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Strut Profile",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Dome Diameter",
+          "ioValue": 6000
+        },
+        {
+          "name": "Frequency",
+          "ioValue": 3
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-441",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-478",
+          "name": "Hub",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-481",
+          "name": "Strut Profile",
+          "type": "geometry",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.3,
+          "uniqueID": "id-484",
+          "name": "Dome Diameter",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.4,
+          "uniqueID": "id-487",
+          "name": "Frequency",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Code",
+          "x": 0.5,
+          "y": 0.5,
+          "uniqueID": "id-490",
+          "ioValues": [
+            {
+              "name": "hub",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "strutProfile",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "domeDiameter",
+              "ioValue": 6000
+            },
+            {
+              "name": "frequency",
+              "ioValue": 3
+            },
+            {
+              "name": "cutHeight",
+              "ioValue": 0
+            },
+            {
+              "name": "hubGap",
+              "ioValue": 1
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "/**\n * Geodesic dome frame.\n * Subdivides an icosahedron (vertex at the top) into `frequency` divisions per\n * edge, projects the points onto a sphere, and keeps the part above the cut\n * plane (cutHeight is a fraction of the radius, -1..1; 0 = hemisphere).\n * Places a copy of the Hub part at every vertex (facing outward) and\n * extrudes the strut profile between hubs, trimmed to end at the hub rim\n * (plus hubGap) so parts don't overlap.\n * Struts are grouped into length classes A, B, C... with a computed cut list.\n */\nfunction run(\n  hub: Assembly | undefined = undefined,\n  strutProfile: Assembly | undefined = undefined,\n  domeDiameter: number = 6000,\n  frequency: number = 3,\n  cutHeight: number = 0,\n  hubGap: number = 1,\n): Assembly {\n  const R = domeDiameter / 2;\n  const f = Math.max(1, Math.min(6, Math.round(frequency)));\n\n  type V = [number, number, number];\n  const norm = (v: V): V => {\n    const l = Math.hypot(v[0], v[1], v[2]);\n    return [v[0] / l, v[1] / l, v[2] / l];\n  };\n\n  // Icosahedron with a vertex at the top\n  const ico: V[] = [[0, 0, 1]];\n  const zr = 1 / Math.sqrt(5), rr = 2 / Math.sqrt(5);\n  for (let k = 0; k < 5; k++) {\n    const a = (k * 72 * Math.PI) / 180;\n    ico.push([rr * Math.cos(a), rr * Math.sin(a), zr]);\n  }\n  for (let k = 0; k < 5; k++) {\n    const a = ((36 + k * 72) * Math.PI) / 180;\n    ico.push([rr * Math.cos(a), rr * Math.sin(a), -zr]);\n  }\n  ico.push([0, 0, -1]);\n  const U = (k: number) => 1 + (k % 5);\n  const L = (k: number) => 6 + (k % 5);\n  const faces: [number, number, number][] = [];\n  for (let k = 0; k < 5; k++) {\n    faces.push([0, U(k), U(k + 1)]);\n    faces.push([U(k), L(k), U(k + 1)]);\n    faces.push([U(k + 1), L(k), L(k + 1)]);\n    faces.push([11, L(k + 1), L(k)]);\n  }\n\n  // Subdivide and project onto the sphere, deduplicating shared points\n  const verts: V[] = [];\n  const vIndex = new Map<string, number>();\n  const addVert = (p: V): number => {\n    const n = norm(p);\n    const key = n.map((c) => Math.round(c * 1e6)).join(\",\");\n    let i = vIndex.get(key);\n    if (i === undefined) {\n      i = verts.length;\n      verts.push(n);\n      vIndex.set(key, i);\n    }\n    return i;\n  };\n  const edges = new Map<string, [number, number]>();\n  const addEdge = (a: number, b: number) => {\n    const key = a < b ? `${a}-${b}` : `${b}-${a}`;\n    if (!edges.has(key)) edges.set(key, [a, b]);\n  };\n  for (const [ia, ib, ic] of faces) {\n    const A = ico[ia], B = ico[ib], C = ico[ic];\n    const P = (i: number, j: number): number => {\n      const k = f - i - j;\n      return addVert([\n        (k * A[0] + i * B[0] + j * C[0]) / f,\n        (k * A[1] + i * B[1] + j * C[1]) / f,\n        (k * A[2] + i * B[2] + j * C[2]) / f,\n      ]);\n    };\n    for (let i = 0; i < f; i++) {\n      for (let j = 0; j < f - i; j++) {\n        const p0 = P(i, j), p1 = P(i + 1, j), p2 = P(i, j + 1);\n        addEdge(p0, p1); addEdge(p1, p2); addEdge(p2, p0);\n      }\n    }\n  }\n\n  // Truncate: keep the part of the sphere above the cut plane\n  const tol = 1e-6;\n  const keep = verts.map((v) => v[2] >= cutHeight - tol);\n  const usedVerts = verts.map((_, i) => i).filter((i) => keep[i]);\n  const usedEdges = [...edges.values()].filter(([a, b]) => keep[a] && keep[b]);\n\n  // Lift so the lowest kept vertex sits on z = 0\n  const minZ = Math.min(...usedVerts.map((i) => verts[i][2])) * R;\n  const pos = (i: number): V => [verts[i][0] * R, verts[i][1] * R, verts[i][2] * R - minZ];\n\n  // Group struts into length classes\n  const lenOf = ([a, b]: [number, number]) => {\n    const p = pos(a), q = pos(b);\n    return Math.hypot(q[0] - p[0], q[1] - p[1], q[2] - p[2]);\n  };\n  const classLens: number[] = [];\n  for (const e of usedEdges) {\n    const l = lenOf(e);\n    if (!classLens.some((c) => Math.abs(c - l) < 0.05)) classLens.push(l);\n  }\n  classLens.sort((x, y) => x - y);\n  const classOf = (l: number) => classLens.findIndex((c) => Math.abs(c - l) < 0.05);\n  const letter = (i: number) => String.fromCharCode(65 + i);\n  const counts = classLens.map(() => 0);\n\n  // Rotate a shape so its +Z axis points along `d` (unit vector)\n  const orient = (shape: any, d: V) => {\n    const angle = (Math.acos(Math.max(-1, Math.min(1, d[2]))) * 180) / Math.PI;\n    const axis: V = [-d[1], d[0], 0];\n    if (Math.hypot(axis[0], axis[1]) < 1e-9) {\n      return d[2] > 0 ? shape : shape.rotate(180, [0, 0, 0], [1, 0, 0]);\n    }\n    return shape.rotate(angle, [0, 0, 0], axis);\n  };\n\n  // Copy an Assembly with every leaf's geometry transformed\n  const transformAsm = (asm: Assembly, fn: (g: any) => any): Assembly => {\n    if (asm.isLeaf()) {\n      return new Assembly({ ...asm, geometry: fn(asm.geometry.clone()) });\n    }\n    return new Assembly({\n      ...asm,\n      geometry: (asm.geometry as any[]).map((c: Assembly) => transformAsm(c, fn)),\n    });\n  };\n  const firstLeaf = (asm: Assembly): any =>\n    asm.isLeaf() ? asm.geometry : firstLeaf((asm.geometry as any[])[0]);\n\n  // Hub radius in its own plane, so struts can stop at the rim\n  let hubR = 0;\n  if (hub) {\n    const bb = firstLeaf(hub).boundingBox;\n    hubR = Math.max(bb.width, bb.height) / 2;\n  }\n  const trim = hub ? hubR + hubGap : 0;\n\n  const parts: Assembly[] = [];\n\n  // Struts\n  const strutColors = [\"#C8A26B\", \"#B5835A\", \"#D9BF8C\", \"#9C6B43\", \"#E3CFA4\", \"#7F5A3A\"];\n  const profile = strutProfile ? firstLeaf(strutProfile) : replicad.drawCircle(15);\n  for (const e of usedEdges) {\n    const p = pos(e[0]), q = pos(e[1]);\n    const l = lenOf(e);\n    const c = classOf(l);\n    counts[c]++;\n    const d = norm([q[0] - p[0], q[1] - p[1], q[2] - p[2]]);\n    const cutLen = l - 2 * trim;\n    if (cutLen <= 0) throw new Error(`Hubs are too big: strut ${letter(c)} would have length ${cutLen.toFixed(1)} mm`);\n    const solid = orient(profile.clone().sketchOnPlane().extrude(cutLen), d)\n      .translate(p[0] + d[0] * trim, p[1] + d[1] * trim, p[2] + d[2] * trim);\n    parts.push(new Assembly({\n      geometry: solid,\n      color: strutColors[c % strutColors.length],\n      tags: [\"Strut\", `Strut ${letter(c)}`],\n    }));\n  }\n\n  // Hubs, facing outward from the sphere center\n  if (hub) {\n    for (const i of usedVerts) {\n      const p = pos(i);\n      parts.push(transformAsm(hub, (g) => orient(g, verts[i]).translate(p[0], p[1], p[2])));\n    }\n  }\n\n  const cutList = classLens.map(\n    (l, i) => `${counts[i]}x Strut ${letter(i)}: cut ${(l - 2 * trim).toFixed(1)} mm (${l.toFixed(1)} mm hub-center to hub-center)`,\n  );\n  if (hub) cutList.push(`${usedVerts.length}x Hub`);\n  console.log(`${f}V dome, radius ${R} mm: ${usedVerts.length} hubs, ${usedEdges.length} struts`);\n  cutList.forEach((s) => console.log(s));\n\n  return new Assembly({ geometry: parts, bom: cutList });\n}",
+          "compiledCode": "\"use strict\";\n/**\n * Geodesic dome frame.\n * Subdivides an icosahedron (vertex at the top) into `frequency` divisions per\n * edge, projects the points onto a sphere, and keeps the part above the cut\n * plane (cutHeight is a fraction of the radius, -1..1; 0 = hemisphere).\n * Places a copy of the Hub part at every vertex (facing outward) and\n * extrudes the strut profile between hubs, trimmed to end at the hub rim\n * (plus hubGap) so parts don't overlap.\n * Struts are grouped into length classes A, B, C... with a computed cut list.\n */\nfunction run(hub = undefined, strutProfile = undefined, domeDiameter = 6000, frequency = 3, cutHeight = 0, hubGap = 1) {\n    const R = domeDiameter / 2;\n    const f = Math.max(1, Math.min(6, Math.round(frequency)));\n    const norm = (v) => {\n        const l = Math.hypot(v[0], v[1], v[2]);\n        return [v[0] / l, v[1] / l, v[2] / l];\n    };\n    // Icosahedron with a vertex at the top\n    const ico = [[0, 0, 1]];\n    const zr = 1 / Math.sqrt(5), rr = 2 / Math.sqrt(5);\n    for (let k = 0; k < 5; k++) {\n        const a = (k * 72 * Math.PI) / 180;\n        ico.push([rr * Math.cos(a), rr * Math.sin(a), zr]);\n    }\n    for (let k = 0; k < 5; k++) {\n        const a = ((36 + k * 72) * Math.PI) / 180;\n        ico.push([rr * Math.cos(a), rr * Math.sin(a), -zr]);\n    }\n    ico.push([0, 0, -1]);\n    const U = (k) => 1 + (k % 5);\n    const L = (k) => 6 + (k % 5);\n    const faces = [];\n    for (let k = 0; k < 5; k++) {\n        faces.push([0, U(k), U(k + 1)]);\n        faces.push([U(k), L(k), U(k + 1)]);\n        faces.push([U(k + 1), L(k), L(k + 1)]);\n        faces.push([11, L(k + 1), L(k)]);\n    }\n    // Subdivide and project onto the sphere, deduplicating shared points\n    const verts = [];\n    const vIndex = new Map();\n    const addVert = (p) => {\n        const n = norm(p);\n        const key = n.map((c) => Math.round(c * 1e6)).join(\",\");\n        let i = vIndex.get(key);\n        if (i === undefined) {\n            i = verts.length;\n            verts.push(n);\n            vIndex.set(key, i);\n        }\n        return i;\n    };\n    const edges = new Map();\n    const addEdge = (a, b) => {\n        const key = a < b ? `${a}-${b}` : `${b}-${a}`;\n        if (!edges.has(key))\n            edges.set(key, [a, b]);\n    };\n    for (const [ia, ib, ic] of faces) {\n        const A = ico[ia], B = ico[ib], C = ico[ic];\n        const P = (i, j) => {\n            const k = f - i - j;\n            return addVert([\n                (k * A[0] + i * B[0] + j * C[0]) / f,\n                (k * A[1] + i * B[1] + j * C[1]) / f,\n                (k * A[2] + i * B[2] + j * C[2]) / f,\n            ]);\n        };\n        for (let i = 0; i < f; i++) {\n            for (let j = 0; j < f - i; j++) {\n                const p0 = P(i, j), p1 = P(i + 1, j), p2 = P(i, j + 1);\n                addEdge(p0, p1);\n                addEdge(p1, p2);\n                addEdge(p2, p0);\n            }\n        }\n    }\n    // Truncate: keep the part of the sphere above the cut plane\n    const tol = 1e-6;\n    const keep = verts.map((v) => v[2] >= cutHeight - tol);\n    const usedVerts = verts.map((_, i) => i).filter((i) => keep[i]);\n    const usedEdges = [...edges.values()].filter(([a, b]) => keep[a] && keep[b]);\n    // Lift so the lowest kept vertex sits on z = 0\n    const minZ = Math.min(...usedVerts.map((i) => verts[i][2])) * R;\n    const pos = (i) => [verts[i][0] * R, verts[i][1] * R, verts[i][2] * R - minZ];\n    // Group struts into length classes\n    const lenOf = ([a, b]) => {\n        const p = pos(a), q = pos(b);\n        return Math.hypot(q[0] - p[0], q[1] - p[1], q[2] - p[2]);\n    };\n    const classLens = [];\n    for (const e of usedEdges) {\n        const l = lenOf(e);\n        if (!classLens.some((c) => Math.abs(c - l) < 0.05))\n            classLens.push(l);\n    }\n    classLens.sort((x, y) => x - y);\n    const classOf = (l) => classLens.findIndex((c) => Math.abs(c - l) < 0.05);\n    const letter = (i) => String.fromCharCode(65 + i);\n    const counts = classLens.map(() => 0);\n    // Rotate a shape so its +Z axis points along `d` (unit vector)\n    const orient = (shape, d) => {\n        const angle = (Math.acos(Math.max(-1, Math.min(1, d[2]))) * 180) / Math.PI;\n        const axis = [-d[1], d[0], 0];\n        if (Math.hypot(axis[0], axis[1]) < 1e-9) {\n            return d[2] > 0 ? shape : shape.rotate(180, [0, 0, 0], [1, 0, 0]);\n        }\n        return shape.rotate(angle, [0, 0, 0], axis);\n    };\n    // Copy an Assembly with every leaf's geometry transformed\n    const transformAsm = (asm, fn) => {\n        if (asm.isLeaf()) {\n            return new Assembly({ ...asm, geometry: fn(asm.geometry.clone()) });\n        }\n        return new Assembly({\n            ...asm,\n            geometry: asm.geometry.map((c) => transformAsm(c, fn)),\n        });\n    };\n    const firstLeaf = (asm) => asm.isLeaf() ? asm.geometry : firstLeaf(asm.geometry[0]);\n    // Hub radius in its own plane, so struts can stop at the rim\n    let hubR = 0;\n    if (hub) {\n        const bb = firstLeaf(hub).boundingBox;\n        hubR = Math.max(bb.width, bb.height) / 2;\n    }\n    const trim = hub ? hubR + hubGap : 0;\n    const parts = [];\n    // Struts\n    const strutColors = [\"#C8A26B\", \"#B5835A\", \"#D9BF8C\", \"#9C6B43\", \"#E3CFA4\", \"#7F5A3A\"];\n    const profile = strutProfile ? firstLeaf(strutProfile) : replicad.drawCircle(15);\n    for (const e of usedEdges) {\n        const p = pos(e[0]), q = pos(e[1]);\n        const l = lenOf(e);\n        const c = classOf(l);\n        counts[c]++;\n        const d = norm([q[0] - p[0], q[1] - p[1], q[2] - p[2]]);\n        const cutLen = l - 2 * trim;\n        if (cutLen <= 0)\n            throw new Error(`Hubs are too big: strut ${letter(c)} would have length ${cutLen.toFixed(1)} mm`);\n        const solid = orient(profile.clone().sketchOnPlane().extrude(cutLen), d)\n            .translate(p[0] + d[0] * trim, p[1] + d[1] * trim, p[2] + d[2] * trim);\n        parts.push(new Assembly({\n            geometry: solid,\n            color: strutColors[c % strutColors.length],\n            tags: [\"Strut\", `Strut ${letter(c)}`],\n        }));\n    }\n    // Hubs, facing outward from the sphere center\n    if (hub) {\n        for (const i of usedVerts) {\n            const p = pos(i);\n            parts.push(transformAsm(hub, (g) => orient(g, verts[i]).translate(p[0], p[1], p[2])));\n        }\n    }\n    const cutList = classLens.map((l, i) => `${counts[i]}x Strut ${letter(i)}: cut ${(l - 2 * trim).toFixed(1)} mm (${l.toFixed(1)} mm hub-center to hub-center)`);\n    if (hub)\n        cutList.push(`${usedVerts.length}x Hub`);\n    console.log(`${f}V dome, radius ${R} mm: ${usedVerts.length} hubs, ${usedEdges.length} struts`);\n    cutList.forEach((s) => console.log(s));\n    return new Assembly({ geometry: parts, bom: cutList });\n}\n"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "hub",
+          "ap1ID": "id-478",
+          "ap2ID": "id-490"
+        },
+        {
+          "ap2Name": "strutProfile",
+          "ap1ID": "id-481",
+          "ap2ID": "id-490"
+        },
+        {
+          "ap2Name": "domeDiameter",
+          "ap1ID": "id-484",
+          "ap2ID": "id-490"
+        },
+        {
+          "ap2Name": "frequency",
+          "ap1ID": "id-487",
+          "ap2ID": "id-490"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-490",
+          "ap2ID": "id-441"
+        }
+      ],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "Dome Diameter",
+      "ap1ID": "id-416",
+      "ap2ID": "id-439"
+    },
+    {
+      "ap2Name": "Frequency",
+      "ap1ID": "id-419",
+      "ap2ID": "id-439"
+    },
+    {
+      "ap2Name": "Strut Diameter",
+      "ap1ID": "id-422",
+      "ap2ID": "id-435"
+    },
+    {
+      "ap2Name": "Hub Diameter",
+      "ap1ID": "id-425",
+      "ap2ID": "id-431"
+    },
+    {
+      "ap2Name": "Hub Thickness",
+      "ap1ID": "id-428",
+      "ap2ID": "id-431"
+    },
+    {
+      "ap2Name": "Hub",
+      "ap1ID": "id-431",
+      "ap2ID": "id-439"
+    },
+    {
+      "ap2Name": "Strut Profile",
+      "ap1ID": "id-435",
+      "ap2ID": "id-439"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-439",
+      "ap2ID": "id-405"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
